@@ -1,0 +1,52 @@
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+label.label-required::after {
+  content: "*";
+  margin-left: 3px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  width: unset;
+  margin-right: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  font-weight: bold;
+  background-color: #198754;
+  border: 1px solid #198754;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+div.error {
+  font-size: 13px;
+  color: #dc3545;
+}
+
+.formBlog button[type="submit"] {
+  background: #0b7ff9;
+}

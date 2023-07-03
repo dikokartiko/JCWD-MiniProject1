@@ -1,0 +1,9 @@
+{
+  "register": "https://minpro-blog.purwadhikabootcamp.com/api/auth",
+  "keepLogin": "https://minpro-blog.purwadhikabootcamp.com/api/auth",
+  "login": "https://minpro-blog.purwadhikabootcamp.com/api/auth/login",
+  "getBlog": "https://minpro-blog.purwadhikabootcamp.com/api/blog?&sort=DESC&page=1&size=50",
+  "getBlogLogin": "https://minpro-blog.purwadhikabootcamp.com/api/blog/auth?id_cat=3&sort=ASC&page=1&search&sortBy&size",
+  "getCategory": "https://minpro-blog.purwadhikabootcamp.com/api/blog/allCategory",
+  "getPagFav": "https://minpro-blog.purwadhikabootcamp.com/api/blog/pagFav?page=1&orderBy=total_fav&sort=DESC&id_cat=3&search=Tesla&size=10"
+}

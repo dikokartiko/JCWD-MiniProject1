@@ -1,0 +1,54 @@
+.truncate {
+  white-space: break-spaces;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-break: anywhere;
+}
+
+.image-background {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-background.w-100 {
+  width: 100%;
+}
+
+.titleBlog{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px auto;
+}
+
+.sidebarBlog {
+  cursor: pointer !important;
+}
+
+.emptyArticle {
+  text-align: center;
+  margin: 30px;
+  font-size: 20px;
+  color: gray;
+}
+
+.sidebarActive {
+  color: #018ffe;
+  font-weight: bold;
+}
+
+.customCardBlog {
+  height: 281px;
+}
+
+.imageDetailBlog {
+  width: 100vw;
+  height: 100%;
+}
+
+.Toastify__close-button{
+  width: 20px !important;
+}
