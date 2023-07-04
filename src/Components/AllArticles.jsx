@@ -20,7 +20,7 @@ function Card() {
 
   return (
     <div id="cardHome" class="mt-6 container ml-auto mr-auto">
-      <h2 class="titleBlog">All Articles</h2>
+      <h2 class="titleBlog">Newest Articles</h2>
       <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
         {dataBlog.result
           ?.slice(firstPostIndex, lastPostIndex)
@@ -33,7 +33,7 @@ function Card() {
           })}
       </div>
       <PaginationWithIcons
-        totalPosts={dataBlog.result?.length}
+        totalPosts={dataBlog.result?.length - 70}
         postsPerPage={postsPerPage}
         setCurrentPage={setCurrentPage}
       />

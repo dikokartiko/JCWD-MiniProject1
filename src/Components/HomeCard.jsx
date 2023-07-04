@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LikeButton from "./button/Likebutton";
 
 function HomeCard(props) {
   const post = props.post;
@@ -19,6 +20,7 @@ function HomeCard(props) {
           height: `200px`,
         }}></div>
       <div class="p-5">
+        <p>{new Date(post.createdAt).toLocaleDateString()}</p>
         <h5
           class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white truncate"
           style={{ WebkitLineClamp: 2 }}>
@@ -29,12 +31,15 @@ function HomeCard(props) {
           style={{ WebkitLineClamp: 3 }}>
           {post.content}
         </p>
-        <Link
-          class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          to={detailBlogUrl}
-          state={{ data: post }}>
-          Read more
-        </Link>
+        <div className="flex ">
+          <Link
+            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shrink"
+            to={detailBlogUrl}
+            state={{ data: post }}>
+            Read more
+          </Link>
+          <LikeButton data={post} />
+        </div>
       </div>
     </div>
   );

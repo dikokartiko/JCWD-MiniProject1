@@ -72,7 +72,7 @@ const LikeButton = ({ data }) => {
     <div className="mt-auto px-4 py-4">
       {isLoggedIn && (
         <button
-          className={`flex items-center gap-1 text-gray-500 hover:text-gray-700 focus:outline-none ${
+          className={`flex items-center bg-teal-200 gap-1 text-gray-500 hover:text-gray-700 focus:outline-none ${
             liked ? "text-red-500" : ""
           }`}
           onClick={handleLike}>
